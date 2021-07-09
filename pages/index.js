@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../src/components/Layout'
 import HomepageContent from '../src/components/HomepageContent'
+import ThoughtSpot from '../src/components/thoughtspot'
 import { useApi, serverApiRequest } from '../src/libs/api'
 import { getPage } from '../src/libs/page'
 import { object } from 'prop-types'
@@ -107,6 +108,7 @@ const HomePage = ({ initData }) => {
         sidebar={<Sidebar listTag={tags} tagLoading={listTag.isLoading} onTagClick={handleFilterByTag} />}
       >
         <TabHomePage global={isGlobal} onTabClick={handleChangeTab} login={isLogin} />
+        <ThoughtSpot dataSources={["cd252e5c-b552-49a8-821d-3eadaa049cca"]}></ThoughtSpot>
         <ListArticle
           onRequestReload={handleReloadArticles}
           loading={listArticle.isLoading}

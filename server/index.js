@@ -7,7 +7,7 @@ const sitemap = require('./sitemap')
 
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
-const port = process.env.PORT || 3100
+const port = process.env.PORT || 3000
 
 const handle = app.getRequestHandler()
 
